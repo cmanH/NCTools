@@ -15,6 +15,7 @@
 		3E728118F116A20D878A8DB127571F97 /* Pods-NCTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 054981234B590928D805052D5AE7087D /* Pods-NCTools_Tests-dummy.m */; };
 		4C7F881C60378771728D820D1AA251D4 /* NCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E132AE268CC3FC4D4AAB25069BFFA8 /* NCFileManager.swift */; };
 		5CD3756221351E2C006F27F9 /* NCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3756121351E2C006F27F9 /* NCDevice.swift */; };
+		5CD3756921355452006F27F9 /* String_decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3756821355452006F27F9 /* String_decimal.swift */; };
 		75471CADFA1943558DCD44C324386016 /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = 66C9F7BBE30B6358E00356158E459C43 /* Root.plist */; };
 		7BCDC140657273F4A366866727B6F6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		85FDD1790C8931322627DE814118B8FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -48,6 +49,7 @@
 		4C89E555CC0580DF49528135AE43A299 /* Pods-NCTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5666709481026CBF8B408EF6FFE2ED46 /* Pods-NCTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5CD3756121351E2C006F27F9 /* NCDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCDevice.swift; sourceTree = "<group>"; };
+		5CD3756821355452006F27F9 /* String_decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String_decimal.swift; sourceTree = "<group>"; };
 		5E4E174DFBCE996A90918392F9A9A7A1 /* Pods-NCTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCTools_Example-frameworks.sh"; sourceTree = "<group>"; };
 		61F302A3E7C4B52737743383C9D215F3 /* Pods-NCTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NCTools_Example-umbrella.h"; sourceTree = "<group>"; };
 		6353395D9EC0A705ADEEA036977CF643 /* Pods-NCTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NCTools_Example.modulemap"; sourceTree = "<group>"; };
@@ -110,10 +112,11 @@
 		0F2C8065BAAEA99E3669660243E05C4E /* NCTools */ = {
 			isa = PBXGroup;
 			children = (
+				5CD3756721355442006F27F9 /* String */,
+				38921696E4286286712FA09A60F0B87C /* UserDefault */,
 				C6EF4ECE00A3DDA7E01A18DE186487D3 /* Common */,
 				220A689569EEE5C101A4CD85E07AFBEC /* FileManager */,
 				137B3AE9F94FA5E368CC0FCAD30C5A27 /* Support Files */,
-				38921696E4286286712FA09A60F0B87C /* UserDefault */,
 			);
 			name = NCTools;
 			path = ../..;
@@ -148,8 +151,7 @@
 			children = (
 				7C697CC8CB14FBA4419A974D182111C7 /* NCUserDefault.swift */,
 			);
-			name = UserDefault;
-			path = NCTools/Classes/UserDefault;
+			path = UserDefault;
 			sourceTree = "<group>";
 		};
 		3CB168C1EF4645F55FCA913AEFF0ECA6 /* Pods-NCTools_Example */ = {
@@ -203,6 +205,14 @@
 			);
 			name = "Pods-NCTools_Tests";
 			path = "Target Support Files/Pods-NCTools_Tests";
+			sourceTree = "<group>";
+		};
+		5CD3756721355442006F27F9 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				5CD3756821355452006F27F9 /* String_decimal.swift */,
+			);
+			path = String;
 			sourceTree = "<group>";
 		};
 		7005CFC3AA4F90C2445D089AF0305164 /* Development Pods */ = {
@@ -378,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD3756921355452006F27F9 /* String_decimal.swift in Sources */,
 				3018D2D341A6F1A886E905834C1B7EFE /* NCCommon.swift in Sources */,
 				04630159D306BD630A22B2D132C1FFCC /* NCFileContext.swift in Sources */,
 				5CD3756221351E2C006F27F9 /* NCDevice.swift in Sources */,
