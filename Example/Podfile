@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NCTools_Example' do
+  pod 'NCTools', :path => '../'
+
+  target 'NCTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
