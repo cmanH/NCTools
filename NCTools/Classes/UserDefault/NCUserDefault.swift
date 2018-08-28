@@ -20,11 +20,14 @@ public enum NCUserDefaultSaveType {
     case array(array:Array<Any>,key:String)
     case string(string:String,key:String)
     case dictianry(dic:[String:Any],key:String)
-    
+    case any(obj:Any,key:String)
 }
 
 ///存数据到preference
 public extension UserDefaults{
+    
+    
+    ///保存数据到Preference
     public class func save(value:NCUserDefaultSaveType){
         let storage = UserDefaults.standard
         switch value {
@@ -38,27 +41,33 @@ public extension UserDefaults{
             storage.set(obj.obj, forKey: obj.key)
         case .data(let obj):
             storage.set(obj.data, forKey: obj.key)
+        case .array(let obj):
+            storage.set(obj.array, forKey: obj.key)
+        case .string(let obj):
+            storage.set(obj.string, forKey: obj.key)
         case .dictianry(let obj):
-            guard obj.dic.count != 0 else{
-                fatalError("dictionary can not be empty")
-                return
-            }
-            
-            for (_,v) in obj.dic{
-                
-                
-            }
-            
-            
-            
-        default:
-            break
+            storage.set(obj.dic, forKey: obj.key)
+        case .any(let obj):
+            storage.set(obj.obj, forKey: obj.key)
+
         }
+        storage.synchronize()
+    }
+  
+}
+
+public extension Data{
+    
+    //将对象编译成Data
+    public static func encodeWith(obj:Any)->Data{
+        let data = NSKeyedArchiver.archivedData(withRootObject: obj)
+        return data
     }
     
-    
-    
-    
-    
+    ///反编译data成对象
+    public static func decodeWith<T>(data:Data)->T?{
+        let obj = NSKeyedUnarchiver.unarchiveObject(with: data) as? T
+        return obj
+    }
     
 }
