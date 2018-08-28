@@ -1,0 +1,6 @@
+framework module Pods_NCTools_Tests {
+  umbrella header "Pods-NCTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
