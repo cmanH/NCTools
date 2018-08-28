@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NCTools'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '方便自己以后在工程中使用的lib'
 
 # This description is used to generate tags and improve search results.
