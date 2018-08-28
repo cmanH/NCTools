@@ -14,6 +14,7 @@
 		3018D2D341A6F1A886E905834C1B7EFE /* NCCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = C822998509F72E6577B19BEE5A8FF43A /* NCCommon.swift */; };
 		3E728118F116A20D878A8DB127571F97 /* Pods-NCTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 054981234B590928D805052D5AE7087D /* Pods-NCTools_Tests-dummy.m */; };
 		4C7F881C60378771728D820D1AA251D4 /* NCFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E132AE268CC3FC4D4AAB25069BFFA8 /* NCFileManager.swift */; };
+		5CD3756221351E2C006F27F9 /* NCDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD3756121351E2C006F27F9 /* NCDevice.swift */; };
 		75471CADFA1943558DCD44C324386016 /* Root.plist in Sources */ = {isa = PBXBuildFile; fileRef = 66C9F7BBE30B6358E00356158E459C43 /* Root.plist */; };
 		7BCDC140657273F4A366866727B6F6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		85FDD1790C8931322627DE814118B8FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -37,33 +38,34 @@
 
 /* Begin PBXFileReference section */
 		054981234B590928D805052D5AE7087D /* Pods-NCTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NCTools_Tests-dummy.m"; sourceTree = "<group>"; };
-		0E580B0EE527E6FCEE5DE75BECE8F0FA /* NCTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = NCTools.modulemap; sourceTree = "<group>"; };
+		0E580B0EE527E6FCEE5DE75BECE8F0FA /* NCTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NCTools.modulemap; sourceTree = "<group>"; };
 		18036701194B7BE5B42EA729814EC25D /* Pods-NCTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		2A394DBC774A7FE0B5548036B4E8B583 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DE23FCE02F7D5D510B8406366AD79D7 /* Pods_NCTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NCTools_Example.framework; path = "Pods-NCTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE23FCE02F7D5D510B8406366AD79D7 /* Pods_NCTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ED9E239272460E87AF8C2A98D512CAA /* NCTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NCTools.xcconfig; sourceTree = "<group>"; };
 		4000490CD087FA81201EF79B9045EE58 /* Pods-NCTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NCTools_Example-dummy.m"; sourceTree = "<group>"; };
-		46E5901069FD9BEED9393225452FA92C /* Pods-NCTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NCTools_Tests.modulemap"; sourceTree = "<group>"; };
+		46E5901069FD9BEED9393225452FA92C /* Pods-NCTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NCTools_Tests.modulemap"; sourceTree = "<group>"; };
 		4C89E555CC0580DF49528135AE43A299 /* Pods-NCTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5666709481026CBF8B408EF6FFE2ED46 /* Pods-NCTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5CD3756121351E2C006F27F9 /* NCDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NCDevice.swift; sourceTree = "<group>"; };
 		5E4E174DFBCE996A90918392F9A9A7A1 /* Pods-NCTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCTools_Example-frameworks.sh"; sourceTree = "<group>"; };
 		61F302A3E7C4B52737743383C9D215F3 /* Pods-NCTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NCTools_Example-umbrella.h"; sourceTree = "<group>"; };
-		6353395D9EC0A705ADEEA036977CF643 /* Pods-NCTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-NCTools_Example.modulemap"; sourceTree = "<group>"; };
+		6353395D9EC0A705ADEEA036977CF643 /* Pods-NCTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NCTools_Example.modulemap"; sourceTree = "<group>"; };
 		66C9F7BBE30B6358E00356158E459C43 /* Root.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Root.plist; sourceTree = "<group>"; };
 		6A2A05DB25ACDF99C861D447B1F6AAE3 /* Pods-NCTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NCTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		706A86934D7E3CCD61688621AEDD1AE9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7676BC39153A2155A5ED449A09DD4EB5 /* Pods-NCTools_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NCTools_Tests-resources.sh"; sourceTree = "<group>"; };
 		7C697CC8CB14FBA4419A974D182111C7 /* NCUserDefault.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NCUserDefault.swift; sourceTree = "<group>"; };
 		889E02AADCCA913CF2F99A23E6948364 /* NCTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCTools-umbrella.h"; sourceTree = "<group>"; };
-		9067BAE8C4592415DA2ECB0DE1F960A3 /* NCTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NCTools.framework; path = NCTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9067BAE8C4592415DA2ECB0DE1F960A3 /* NCTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NCTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93D0C69C0F40622F2BF3375D5AC76BF4 /* Pods-NCTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NCTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1ABF4892AE817F2C3E39D54DD380B0 /* Pods-NCTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NCTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B30E5ED807B3AA3C07F69AFA537F6248 /* NCFileContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NCFileContext.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BFD759D49B5A16DFC4A2C779B11697D8 /* NCTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NCTools-prefix.pch"; sourceTree = "<group>"; };
 		C01917F8D6D35370C426D69D4BFA6775 /* Pods-NCTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NCTools_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C22F2FBF9762BD4E51DF13D9ABC65FC3 /* Pods_NCTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NCTools_Tests.framework; path = "Pods-NCTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C22F2FBF9762BD4E51DF13D9ABC65FC3 /* Pods_NCTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NCTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64DFC13A6672E27892C286EADD25E66 /* Pods-NCTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NCTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C822998509F72E6577B19BEE5A8FF43A /* NCCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NCCommon.swift; sourceTree = "<group>"; };
 		CEDD736C1BFEF4089CF4A91427A17BB8 /* Root.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Root.strings; path = en.lproj/Root.strings; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				C822998509F72E6577B19BEE5A8FF43A /* NCCommon.swift */,
 				DFB47EAA70FB3CD82CDCEC4061A40469 /* NCHelper.bundle */,
+				5CD3756121351E2C006F27F9 /* NCDevice.swift */,
 			);
 			name = Common;
 			path = NCTools/Classes/Common;
@@ -247,7 +250,6 @@
 				66C9F7BBE30B6358E00356158E459C43 /* Root.plist */,
 				0BEB0C69E948E2115D5BABB3A6721D7E /* Root.strings */,
 			);
-			name = NCHelper.bundle;
 			path = NCHelper.bundle;
 			sourceTree = "<group>";
 		};
@@ -378,6 +380,7 @@
 			files = (
 				3018D2D341A6F1A886E905834C1B7EFE /* NCCommon.swift in Sources */,
 				04630159D306BD630A22B2D132C1FFCC /* NCFileContext.swift in Sources */,
+				5CD3756221351E2C006F27F9 /* NCDevice.swift in Sources */,
 				4C7F881C60378771728D820D1AA251D4 /* NCFileManager.swift in Sources */,
 				C955E3105E0EA190FE0EEB5AB4EA9A5D /* NCTools-dummy.m in Sources */,
 				AF9F329647B3CEDB36B2CEB23F88F81D /* NCUserDefault.swift in Sources */,
