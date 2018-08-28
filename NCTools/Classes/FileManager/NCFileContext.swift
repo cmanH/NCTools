@@ -27,7 +27,7 @@ public class NCFileContext: NSObject {
         guard filePaths.count > 0 else {
             return ""
         }
-        NSDecimalNumber
+        
         return filePaths[0]
     }
     
