@@ -23,7 +23,7 @@ pod 'NCTools'
 
 ## Author
 
-letneilgo@163.com, letneilgo@163.com
+NeilChen ,xmk2067@dingtalk.com
 
 ## License
 
