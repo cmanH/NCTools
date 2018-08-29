@@ -35,7 +35,7 @@ TODO: Add long description of the pod here.
   # s.resource_bundles = {
   #   'NCTools' => ['NCTools/Assets/*.png']
   # }
-
+   s.swift_version = "4.1"
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
