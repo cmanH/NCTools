@@ -60,13 +60,14 @@ public extension Data{
     
     //将对象编译成Data
     public static func encodeWith(obj:Any)->Data{
+        
         let data = NSKeyedArchiver.archivedData(withRootObject: obj)
         return data
     }
     
     ///反编译data成对象
-    public static func decodeWith<T>(data:Data)->T?{
-        let obj = NSKeyedUnarchiver.unarchiveObject(with: data) as? T
+    public static func decodeWith<T>(data:Data)->T{
+        let obj = NSKeyedUnarchiver.unarchiveObject(with: data) as! T
         return obj
     }
     

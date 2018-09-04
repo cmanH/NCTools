@@ -112,6 +112,7 @@
 		0F2C8065BAAEA99E3669660243E05C4E /* NCTools */ = {
 			isa = PBXGroup;
 			children = (
+				5CA31A63213E2E7500861DA9 /* Crypto */,
 				5C3D182121363D0D00802ACB /* String */,
 				5C3D182321363D0D00802ACB /* UserDefault */,
 				C6EF4ECE00A3DDA7E01A18DE186487D3 /* Common */,
@@ -215,6 +216,14 @@
 			);
 			name = UserDefault;
 			path = NCTools/Classes/UserDefault;
+			sourceTree = "<group>";
+		};
+		5CA31A63213E2E7500861DA9 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Crypto;
+			path = NCTools/Classes/Crypto;
 			sourceTree = "<group>";
 		};
 		7005CFC3AA4F90C2445D089AF0305164 /* Development Pods */ = {
