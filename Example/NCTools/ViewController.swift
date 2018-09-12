@@ -8,6 +8,7 @@
 
 import UIKit
 import NCTools
+import CryptoSwift
 
 class Person:NSObject,NSCoding {
     
@@ -15,6 +16,9 @@ class Person:NSObject,NSCoding {
     override init() {
         super.init()
     }
+    
+    
+    
     required init?(coder aDecoder: NSCoder) {
         self.name = aDecoder.decodeObject(forKey: "name") as! String
     }
@@ -29,14 +33,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let a = Person.init()
-        a.name = "NeilChen"
-        let data = Data.encodeWith(obj: a)
-        let b:Person = Data.decodeWith(data: data)!
-        print(b.name)
-      
+        
+        //print()
+        print(NCDevice.identifier)
+        
+        let a = "Hello,World"
+        
+        let b = a.subString(to: 4)
+        let c = a.subSting(from: 2)
+        let d = a.sub(startIdx: 3, endIdx: 7)
+        
+        print(b + "\n" + c + "\n" + d )
+        
+        
+    
+        
+        
+
         // Do any additional setup after loading the view, typically from a nib.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
